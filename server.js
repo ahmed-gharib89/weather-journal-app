@@ -44,3 +44,15 @@ const addData = (req, res) => {
 // Calling the app post with the home route
 app.post('/', addData);
 
+/**
+ * @description Sending projectData to the client side
+ * @param {object} req
+ * @param {object} res
+ */
+const getData = (req, res) => {
+    res.send(projectData);
+    console.log(projectData);
+};
+
+// Calling app get with all route
+app.get('/all', getData);
