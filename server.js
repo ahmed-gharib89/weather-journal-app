@@ -37,7 +37,10 @@ const server = app.listen(port, listening);
  * @param {object} res
  */
 const addData = (req, res) => {
-    projectData.push(req.body);
+    const data = req.body;
+    projectData['date'] = data.date;
+    projectData['temp'] = data.temp;
+    projectData['content'] = data.content;
     console.log(projectData);
 };
 

@@ -8,7 +8,7 @@ body{
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
+    background: #333;
     color: #f0d43a;
     justify-content: center;
     grid-gap: 1em;
@@ -17,7 +17,8 @@ body{
 }
 
 .holder{
-
+    display: flex;
+    flex-flow: column;
 }
 
 .entry{
@@ -69,13 +70,14 @@ button{
     height: 100px;
     background: #3b4a6b;
     color: #f0d43a;
-    font-size: 26px;
+    font-size: 27px;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    display:block;
 }
 h1{
-    font-size: 36px;
+    font-size: 40px;
 }
 
 textarea{
